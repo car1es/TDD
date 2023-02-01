@@ -53,7 +53,6 @@ public class PhoneBookTest {
 
         Set<String> result = phoneBook.printAllNames();
         String[] expected = {"Anya", "Borya", "Denis", "Petya"};
-
         assertThat(result.toArray(), Matchers.equalTo(expected));
     }
 

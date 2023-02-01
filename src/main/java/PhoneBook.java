@@ -1,9 +1,10 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class PhoneBook {
-    private Map<String, String> map = new HashMap<>();
+    private Map<String, String> map = new TreeMap<>();
 
     public boolean add(String name, String number) {
         if (!map.containsKey(name)) {
@@ -29,7 +30,8 @@ public class PhoneBook {
     }
 
     public Set<String> printAllNames() {
-        return null;
+        System.out.println(map.keySet());
+        return map.keySet();
     }
 
 }
