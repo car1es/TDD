@@ -19,4 +19,13 @@ public class PhoneBookTest {
         boolean result = phoneBook.add("Vasya", "+79000010110");
         Assertions.assertEquals(expected, result);
     }
+    @Test
+    public void findByNumberTest(){
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Vasya", "+79000010110");
+        final String expected = "+79000010110";
+        String result = phoneBook.findByNumber("Vasya");
+        Assertions.assertEquals(expected,result);
+    }
+
 }
