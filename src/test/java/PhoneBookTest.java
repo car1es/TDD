@@ -20,11 +20,11 @@ public class PhoneBookTest {
         Assertions.assertEquals(expected, result);
     }
     @Test
-    public void findByNumberTest(){
+    public void findByNameTest(){
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Vasya", "+79000010110");
         final String expected = "+79000010110";
-        String result = phoneBook.findByNumber("Vasya");
+        String result = phoneBook.findByName("Vasya");
         Assertions.assertEquals(expected,result);
     }
 

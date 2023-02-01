@@ -13,7 +13,7 @@ public class PhoneBook {
         System.out.println("Такое имя уже есть в телефонной книге, размер книги остался прежним: " + map.size());
         return false;
     }
-    public String findByNumber(String name){
+    public String findByName(String name){
         return map.get(name);
     }
 }
